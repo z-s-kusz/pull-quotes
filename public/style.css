@@ -1,0 +1,116 @@
+:root {
+  --visited-color: rgb(224, 79, 127);
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+@media screen and (max-width: 600px) {
+  .main-grid {
+    grid-template-columns: 1fr 10fr 1fr;
+  }
+}
+
+.full-width {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.center-column {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.pointless-highlight {
+  font-size: xx-large;
+  border-left: 6px solid black;
+  padding-left: 1.5rem;
+  padding-right: 0;
+  margin: 2rem;
+}
+
+header {
+  padding: 1rem;
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  font-size: x-large;
+  font-family: monospace;
+}
+.logo span {
+  padding: 0 4px 0 4px;
+}
+.dark {
+  background-color: black;
+  color: white;
+}
+.light {
+  color: black;
+  background-color: white;
+}
+
+p {
+  font-family: helvetica;
+  font-size: large;
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+a {
+  color: red;
+}
+a:visited {
+  color: var(--visited-color)
+}
+
+footer {
+  padding: 1rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  background-color: black;
+  color: white;
+}
+
+footer a {
+  color: red;
+}
+footer a:visited {
+  color: var(--visited-color)
+}
+footer a:hover {
+  color: pink;
+}
+
+.Transcendence {
+  color: white;
+  padding-top: 2rem;
+
+}
+.shoutout {
+  padding: 2rem;
+  font-size: xx-small;
+  text-align: center;
+}
